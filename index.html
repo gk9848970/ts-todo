@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <ul id="list">
+      </ul>
+      
+      <form id="new-todo-form">
+        <label for="todo-input">New Todo</label>
+        <input type="text" id="todo-input" />
+        <button type="submit">Add Todo</button>
+      </form>
+    </div>
+
+    <template id="new-todo-item-template">
+      <li class="list-item">
+        <label class="list-item-label">
+          <input class="label-input" type="checkbox" />
+          <span class="label-text">Placeholder Task</span>
+        </label>
+        <button class="delete-btn">Delete</button>
+      </li>
+    </template>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
